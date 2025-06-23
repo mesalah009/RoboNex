@@ -1,0 +1,1 @@
+RoboNex is a static website developed using HTML5 and CSS3, designed to showcase and sell electronic components, PC parts, and computer hardware. The site features a clean and responsive layout built with semantic HTML and modern CSS techniques such as Flexbox and Grid. It focuses on providing a smooth browsing experience with fast load times and clear product presentation
