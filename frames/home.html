@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Accueil</title>
+    <style>
+  
+body{
+    font-family: Arial, sans-serif;
+}
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 750px;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 76%;
+    object-fit: cover; 
+    filter: brightness(50%); 
+    z-index: 0;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 76%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 20%));
+    z-index: 1;
+}
+
+
+.hero h1, .hero p {
+    position: relative;
+    z-index: 2; 
+    text-shadow: 2px 2px 5px rgba(235, 229, 229, 0.63);
+
+
+}
+    .products {
+        display: flex
+
+;
+margin-left: 30px;
+    margin-top: -3px;
+    gap: 10px;
+    padding: 10px;
+
+    width: 95%;
+  }
+  
+  .product {
+    text-decoration: none;
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    border-radius: 10px;
+    color: inherit;
+  }
+  .product:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    
+  }
+  
+  .product img {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .product h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .product .description {
+    font-size: 14px;
+    color: #666;
+    margin: 10px 0;
+  }
+  
+  .product .price {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+    text-decoration: line-through; 
+    color: #888; 
+  }
+  
+ 
+}
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <video class="hero-video" autoplay muted loop>
+            <source src="../images/gettyimages-668544908-640_adpp.mp4" type="video/mp4">
+            
+        </video>
+        <div class="overlay"></div>
+        <h1 class="shimmer-text" style="font-size: 60px;    margin-top: -170px;"    >"Innovation, quality, and performance"</h1>
+        <p class="shimmer-text"style="font-size: 30px;    line-height: 1.5;">At RoboNex, we bring your tech projects to life<br> with the best electronic components!</p>
+    </div>
+    
+   
+
+   <div style="    display: flex
+   ;
+       justify-content: center;margin-top: -165px;    gap: 20px;">
+   
+   <img style=" width: 623px;
+    height: 340px;border-radius: 5px;" src="../images/ads5.jpg">
+   <img style="   border-radius: 5px; width: 623px;
+    height: 340px;" src="../images/ads2.avif"></div>
+   
+        <h1 style="color: #e63946;margin-left: 15px;">promotions:</h1>
+        <div class="products">
+            <a href="processeur/Intel Core i3-14100F.html"   class="product">
+              <img src="../images/processeur/i3.jpg" >
+              <h3>Intel Core i3-14100F</h3>
+              <p class="description">Entry-level processor without integrated GPU, ideal for budget PCs.</p>
+              <div >
+                <span class="price">$99</span>
+                <span style="color: #e63946; /* Rouge vif pour attirer l'attention */
+                font-weight: bold; /* Texte en gras */
+                font-size: 1.2rem; text-decoration: none;">$65</span>
+              </div>
+              
+              
+            <a href="processeur/Intel Core i5-14600KF.html"  class="product">
+              <img src="../images/processeur/i5.jpg" >
+              <h3>Intel Core i5-14600KF</h3>
+              <p class="description">Mid-range processor without integrated GPU, overclockable, perfect for gamers.</p>
+              <div >
+                <span class="price">$1.299</span>
+                <span style="color: #e63946; /* Rouge vif pour attirer l'attention */
+                font-weight: bold; /* Texte en gras */
+                font-size: 1.2rem; text-decoration: none;">$1.199</span>
+              </div>
+            </a>
+            <a href="processeur/Intel Core i7-14700KF.html" class="product">
+              <img src="../images/processeur/i7.jpg" >
+              <h3>Intel Core i7-14700KF</h3>
+              <p class="description" >High-end processor without integrated GPU, suitable for gaming and content creation.</p>
+              <div >
+                <span class="price">$839</span>
+                <span style="color: #e63946; /* Rouge vif pour attirer l'attention */
+                font-weight: bold; /* Texte en gras */
+                font-size: 1.2rem; text-decoration: none;">$780</span>
+              </div>
+            </a>
+            <a href="processeur/Intel Core i9-14900KS.html" class="product">
+              <img src="../images/dur/sam.jpg" >
+              <h3>Samsung 870 EVO 1 To</h3>
+              <p class="description">Affordable NVMe SSD with good performance for everyday tasks.</p>
+              <div >
+                <span class="price">$55.99</span>
+                <span style="color: #e63946; /* Rouge vif pour attirer l'attention */
+                font-weight: bold; /* Texte en gras */
+                font-size: 1.2rem; text-decoration: none;">$40.99</span>
+              </div>
+            </a>
+            <a href="processeur/Intel Core i9-14900KS.html"  class="product">
+                <img src="../images/dur/s2t.jpg" >
+                <h3>Samsung 980 Pro 2 To</h3>
+                <p class="description">Budget-friendly NVMe SSD for speed and storage upgrades.</p>
+                <div >
+                    <span class="price">$43.99</span>
+                    <span style="color: #e63946; /* Rouge vif pour attirer l'attention */
+                    font-weight: bold; /* Texte en gras */
+                    font-size: 1.2rem; text-decoration: none;">$30</span>
+                  </div>
+              </a>
+              
+        </div>
+    </div>
+
+  
+</body>
+</html>
